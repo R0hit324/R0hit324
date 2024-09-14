@@ -1,0 +1,19 @@
+s=int(input("Enter starting point:"))
+e=int(input("Enter ending point:"))
+u=int(input("Enter updation point:"))
+f=input("Enter v for vertical and h for horizontal:")
+o=input("Enter r for reverse anf f for forward order:")
+
+if(o=="r"):
+    for i in range(s,e-1,-u):
+        if(f=="h"):
+            print(i,end=",")
+        elif(f=="v"):
+             print(i)
+
+elif(o=="f"):
+    for i in range(s,e+1,u):
+        if(f=="h"):
+            print(i,end=",")
+        elif(f=="v"):
+            print(i)
