@@ -1,0 +1,12 @@
+age=int(input("Enter users age:"))
+vote=int(input("press 1 for BJP and press 2 for CONGRESS to give vote:"))
+if(age>=18):
+    print(f"You are eligible for vote")
+    if(vote==1):
+        print("You give vote to BJP")
+    elif(vote==2):
+        print("You give vote to CONGRESS")
+    else:
+        print("Your vote is not taken, please try again:-")
+else:
+    print("You are not eligible for vote")
